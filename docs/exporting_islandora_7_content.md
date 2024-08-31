@@ -222,8 +222,8 @@ The `namespace`, `collection`, `content_model`, and `solr_filters` options docum
 
 ```text
 solr_filters:
- - ancestors_ms: 'some\:collection'
- - fgs_state_s: 'Active'
+  ancestors_ms: 'some\:collection'
+  fgs_state_s: 'Active'
 ```
 
 !!! warning
