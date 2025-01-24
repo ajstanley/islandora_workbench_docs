@@ -40,6 +40,19 @@ node_id,file,media_use_tid
 100,test.txt,21
 110,test2.txt,35
 ```
+You must include a `media_type_file_fields` entry in your config if you use a custom media type.
+```yaml
+task: add_media
+host: "http://localhost:8000"
+username: admin
+password: islandora
+input_csv: add_media.csv
+media_use_tid: "http://pcdm.org/use#Transcript"
+media_type: my_custom_media
+media_type_file_fields:
+ "my_custom_media": "field_media_file_1"
+
+```
 
 If you include `media_use_tid` values in your CSV file, they override the `media_use_tid` value set in your configuration file.
 
